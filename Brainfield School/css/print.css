@@ -1,0 +1,106 @@
+/* Brainfield School - Print Stylesheet for Report Cards, Receipts & Certificates */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  .app-sidebar,
+  .app-header,
+  .mobile-nav-bar,
+  .role-switch-container,
+  .filter-bar,
+  .btn,
+  .modal-footer,
+  .modal-close-btn,
+  #toast-container,
+  .view-actions-group,
+  .no-print {
+    display: none !important;
+  }
+
+  .app-main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .app-view-container {
+    padding: 0 !important;
+  }
+
+  .print-only-container {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .official-document {
+    border: 2px solid #1E3A8A;
+    padding: 24px;
+    background: #FFFFFF;
+    page-break-inside: avoid;
+  }
+
+  .official-header {
+    text-align: center;
+    border-bottom: 2px solid #1E3A8A;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+
+  .official-logo {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 8px;
+    display: block;
+  }
+
+  .official-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1E3A8A;
+  }
+
+  .official-subtitle {
+    font-size: 0.9rem;
+    color: #475569;
+  }
+
+  .official-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+
+  .official-table th,
+  .official-table td {
+    border: 1px solid #CBD5E1;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .official-table th {
+    background: #F1F5F9 !important;
+    color: #0F172A !important;
+  }
+
+  .signature-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+
+  .signature-box {
+    text-align: center;
+    width: 200px;
+    border-top: 1px solid #334155;
+    padding-top: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  @page {
+    margin: 12mm;
+    size: auto;
+  }
+}
